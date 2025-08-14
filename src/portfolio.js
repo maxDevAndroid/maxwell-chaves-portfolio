@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
     github: "https://github.com/maxDevAndroid",
-    linkedin: "https://www.linkedin.com/in/saadpasta/",
+    linkedin: "https://www.linkedin.com/in/maxwellchavesdev/",
     gmail: "maxwellbezerra112233@gmail.com",
     gitlab: "https://stackoverflow.com/users/14865889/maxdevandroid",
     medium: "https://medium.com/@maxwellbezerra112233",
@@ -336,7 +336,7 @@ const bigProjects = {
             ]
         }
     ],
-    display: true // Set false to hide this section, defaults to true
+    display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section

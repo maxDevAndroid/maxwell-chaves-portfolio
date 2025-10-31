@@ -21,13 +21,13 @@ const illustration = {
 
 const greeting = {
     username: "Maxwell Chaves",
-    title: "Hi all, I'm Max",
+    title: "Hi, I'm Max",
     subTitle: emoji(
-        "Android Software Developer 🚀 having +6 years of experience building Mobile applications with Kotlin, delivered more than 200 thousand in profit to companies"
+        "Senior Android Engineer 🚀 | 6+ years delivering high-quality mobile applications using Kotlin and Jetpack Compose. Specialized in scalable architectures, multiplatform development (KMP), and driving measurable business results, with over $200K in revenue impact for clients."
     ),
     resumeLink:
-        "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-    displayGreeting: true // Set false to hide this section, defaults to true
+        "https://drive.google.com/file/d/1wTuowSuEleXNR_WgzVGjBwoXXnr0qgBs/view?usp=sharing",
+    displayGreeting: true
 };
 
 // Social Media Links
@@ -47,16 +47,14 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-    title: "What I do",
-    subTitle: "CRAZY ANDROID DEVELOPER WHO WANTS TO EXPLORE ANDROID WORLD",
+    title: "What I Do",
+    subTitle: "PASSIONATE ANDROID ENGINEER BUILDING INNOVATIVE, SCALABLE, AND BEAUTIFULLY CRAFTED APPS",
     skills: [
-        emoji(
-            "⚡ Develop highly interactive Front end / User Interfaces for your mobile applications"
-        ),
-        emoji("⚡ Delivering robust and scalable applications"),
-        emoji(
-            "⚡ Integration of third party services such as Firebase/ AWS / GIT"
-        )
+        emoji("⚡ Architecting and developing high-performance Android apps using Kotlin and Jetpack Compose"),
+        emoji("⚡ Designing clean, scalable, and maintainable architectures (MVVM, Clean Architecture, KMP)"),
+        emoji("⚡ Integrating cloud and third-party services (AWS, Firebase, Stripe, REST APIs, GraphQL)"),
+        emoji("⚡ Building delightful UI/UX experiences with Compose and Material Design 3"),
+        emoji("⚡ Automating CI/CD pipelines, optimizing performance, and ensuring production-grade quality")
     ],
 
     /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -71,58 +69,22 @@ const skillsSection = {
         },
         {
             skillName: "Kotlin",
-            fontAwesomeClassname: "fas fa-code" // não existe ícone oficial no FA, usando "code" como genérico
+            fontAwesomeClassname: "fas fa-code"
         },
         {
             skillName: "Java",
             fontAwesomeClassname: "fab fa-java"
         },
         {
-            skillName: "Git",
-            fontAwesomeClassname: "fab fa-git-alt"
+            skillName: "Jetpack Compose",
+            fontAwesomeClassname: "fas fa-layer-group"
         },
         {
-            skillName: "SQLite / SQL",
-            fontAwesomeClassname: "fas fa-database"
+            skillName: "Kotlin Multiplatform (KMP)",
+            fontAwesomeClassname: "fas fa-project-diagram"
         },
         {
-            skillName: "html-5",
-            fontAwesomeClassname: "fab fa-html5"
-        },
-        {
-            skillName: "css3",
-            fontAwesomeClassname: "fab fa-css3-alt"
-        },
-        {
-            skillName: "sass",
-            fontAwesomeClassname: "fab fa-sass"
-        },
-        {
-            skillName: "JavaScript",
-            fontAwesomeClassname: "fab fa-js"
-        },
-        {
-            skillName: "reactjs",
-            fontAwesomeClassname: "fab fa-react"
-        },
-        {
-            skillName: "nodejs",
-            fontAwesomeClassname: "fab fa-node"
-        },
-        {
-            skillName: "Swift",
-            fontAwesomeClassname: "fab fa-swift"
-        },
-        {
-            skillName: "Npm",
-            fontAwesomeClassname: "fab fa-npm"
-        },
-        {
-            skillName: "sql-database",
-            fontAwesomeClassname: "fas fa-database"
-        },
-        {
-            skillName: "Aws",
+            skillName: "AWS",
             fontAwesomeClassname: "fab fa-aws"
         },
         {
@@ -130,88 +92,104 @@ const skillsSection = {
             fontAwesomeClassname: "fas fa-fire"
         },
         {
-            skillName: "Python",
-            fontAwesomeClassname: "fab fa-python"
+            skillName: "Ktor",
+            fontAwesomeClassname: "fas fa-server"
+        },
+        {
+            skillName: "Git / GitHub",
+            fontAwesomeClassname: "fab fa-git-alt"
+        },
+        {
+            skillName: "Room / SQL",
+            fontAwesomeClassname: "fas fa-database"
+        },
+        {
+            skillName: "CI/CD (GitHub Actions)",
+            fontAwesomeClassname: "fas fa-cogs"
         },
         {
             skillName: "Docker",
             fontAwesomeClassname: "fab fa-docker"
+        },
+        {
+            skillName: "Python",
+            fontAwesomeClassname: "fab fa-python"
+        },
+        {
+            skillName: "GraphQL / REST",
+            fontAwesomeClassname: "fas fa-exchange-alt"
+        },
+        {
+            skillName: "Testing (JUnit, MockK, Turbine)",
+            fontAwesomeClassname: "fas fa-vial"
         }
     ],
-    display: true // Set false to hide this section, defaults to true
+    display: true
 };
+
 
 // Education Section
 
 const educationInfo = {
-    display: true, // Set false to hide this section, defaults to true
+    display: true,
     schools: [
         {
-            schoolName: "Estacio",
+            schoolName: "Estácio de Sá University",
             logo: require("./assets/images/estacioLogo.png"),
-            subHeader: "Master of Science in Computer Science",
+            subHeader: "Bachelor's Degree in Computer Science",
             duration: "July 2020 - December 2024",
-            desc: "Participated in the research and creating local application to help thousand people.",
+            desc: "Focused on software engineering, algorithms, data structures, and system design. Developed Android applications with real-world impact during academic research projects.",
             descBullets: [
-                "",
-                ""
+                "Developed local mobile solutions to improve digital accessibility.",
+                "Collaborated on research involving mobile usability and system optimization."
             ]
         },
         {
             schoolName: "Udemy",
             logo: require("./assets/images/udemyLogo.png"),
-            subHeader: "Mobile Penetration Testing of Android Applications",
+            subHeader: "Mobile Penetration Testing for Android Applications",
             duration: "September 2022 - December 2022",
-            desc: "Audit or perform penetration tests agains Android applications",
+            desc: "Learned advanced techniques to assess and secure Android applications against real-world threats.",
             descBullets: [
-                "Real world attacks on Android Devices and Apps",
-                "Certification Pinning bypass for most of Android Apps",
-                "Explore OWASP Top Ten Mobile and Web most common vulnerabilities",
-                "Android Malware Analysis"
+                "Performed real-world security audits and penetration testing on Android apps.",
+                "Mastered SSL Pinning bypass techniques and reverse engineering fundamentals.",
+                "Explored OWASP Top 10 Mobile vulnerabilities and mitigation strategies.",
+                "Conducted Android malware behavior analysis and detection patterns."
             ]
         },
-
         {
             schoolName: "Udemy",
             logo: require("./assets/images/udemyLogo.png"),
-            subHeader: "Android TDD Masterclass - Coroutines, Jetpack",
+            subHeader: "Android TDD Masterclass – Coroutines & Jetpack",
             duration: "January 2021 - February 2021",
-            desc: "State-of-the-art Android development by building a real production app.",
+            desc: "Built a production-grade Android application using modern architecture patterns and test-driven development.",
             descBullets: [
-                "Android 11 application: Kotlin, Coroutines, DI with Hilt, Jetpack Navigation Component, Kotlin Flow, MVVM",
-                "Application purely with Outside-In Test Driven Development.",
+                "Implemented Clean Architecture with Kotlin, Hilt, Jetpack Navigation, Flow, and MVVM.",
+                "Applied Outside-In Test-Driven Development to ensure scalability and maintainability."
             ]
         },
-
         {
             schoolName: "Udemy",
             logo: require("./assets/images/udemyLogo.png"),
             subHeader: "Master CI/CD for Android Developers",
             duration: "July 2023 - August 2023",
-            desc: "Focus on the development of features, leave the build and distribution to App Center.",
+            desc: "Automated build, testing, and deployment pipelines for Android apps using modern DevOps practices.",
             descBullets: [
-                "Track errors and crashes in your apps.",
-                "Complete CI/CD flows in your app development process.",
-                "App Center to automate checks and protect important branches.",
-                "Automatically create builds on every merge.",
-                "Automate the distribution of new releases to the Google app store.",
-                "Improve teamwork with automatic builds and checks that improve the quality of your merges.",
+                "Configured CI/CD pipelines with App Center and GitHub Actions.",
+                "Automated app distribution, error tracking, and branch protection policies.",
+                "Streamlined collaboration through automated testing and release workflows."
             ]
         },
-
         {
             schoolName: "Udemy",
             logo: require("./assets/images/udemyLogo.png"),
             subHeader: "Jetpack Compose Crash Course for Android with Kotlin",
             duration: "October 2023 - November 2023",
-            desc: "Modern Android apps with Jetpack Compose and integrations.",
+            desc: "Mastered declarative UI development with Jetpack Compose for modern Android applications.",
             descBullets: [
-                "How to create Android UI and layouts directly in code with Kotlin",
-                "Modern Declarative way of creating UI in Android",
-                "Use Compose with other Jetpack libraries: ViewModel, Navigation, LiveData",
-                "Use Compose with other popular libraries: Coroutines, Retrofit",
-                "Integrate Compose in a MVVM architecture",
-                "Create beautiful animations with Jetpack Compose",
+                "Built dynamic UI and animations using Compose and Material Design 3.",
+                "Integrated Compose with ViewModel, Navigation, Coroutines, and Retrofit.",
+                "Applied Compose within MVVM architecture for scalable, reactive apps."
             ]
         }
     ]
@@ -220,28 +198,37 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-    viewSkillBars: true, //Set it to true to show Proficiency Section
+    viewSkillBars: true,
     experience: [
         {
-            Stack: "Frontend/Design", //Insert stack or technology you have experience in
-            progressPercentage: "90%" //Insert relative proficiency in percentage
+            Stack: "Android Development (Kotlin / Jetpack Compose)",
+            progressPercentage: "95%"
         },
         {
-            Stack: "Backend",
+            Stack: "Backend & API Development (Ktor / AWS / Firebase)",
             progressPercentage: "90%"
         },
         {
-            Stack: "Programming",
+            Stack: "Architecture & Clean Code (MVVM / KMP / TDD)",
+            progressPercentage: "88%"
+        },
+        {
+            Stack: "Cloud & DevOps (CI/CD / Docker / GitHub Actions)",
             progressPercentage: "85%"
+        },
+        {
+            Stack: "UI/UX Design & Performance Optimization",
+            progressPercentage: "80%"
         }
     ],
-    displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+    displayCodersrank: false
 };
+
 
 // Work experience section
 
 const workExperiences = {
-    display: true, //Set it to true to show workExperiences Section
+    display: true,
     experience: [
         {
             role: "Software Engineer",
@@ -250,53 +237,52 @@ const workExperiences = {
             date: "December 2024 – Present",
             desc: "",
             descBullets: [
-                "I work on developing scalable, modern, and user-centric solutions, focusing on the river transportation sector and digital ticket sales.",
-                "I am responsible for the entire architecture of Android applications, leveraging Kotlin, Jetpack Compose, Kotlin Multiplatform (KMP), and patterns such as MVVM and Clean Architecture.",
-                "My responsibilities include creating and maintaining features, implementing automated tests, ensuring end-to-end encryption, handling cross-platform error management, and integrating payment flows via Pix, bank slip, and credit card.",
-                "Beyond the technical scope, I also lead daily stand-ups, organize tasks using agile methodologies (Scrum/Kanban), align deliveries with the company’s strategic goals, and contribute directly to the product’s growth and the enhancement of the user experience."
+                "Designing and developing modern, scalable, and user-centric Android solutions for the river transportation and digital ticketing sector.",
+                "Owning the full mobile architecture — Kotlin, Jetpack Compose, and Kotlin Multiplatform (KMP) — applying MVVM and Clean Architecture principles.",
+                "Building secure, testable, and performant features with automated testing, end-to-end encryption, error handling, and payment integrations (Pix, Boleto, Credit Card).",
+                "Leading daily stand-ups, managing tasks through Agile methodologies (Scrum/Kanban), aligning deliveries with business goals, and driving continuous product and UX improvement."
             ]
         },
         {
             role: "Software Engineer",
-            company: "Instituto Atlantico",
+            company: "Instituto Atlântico",
             companylogo: require("./assets/images/iaLogo.png"),
-            date: "May 2021 - November 2024",
+            date: "May 2021 – November 2024",
             desc: "",
-            descBullets:
-                [
-                    "Developed and maintained scalable Android applications for the international market using Kotlin, Jetpack Compose, and the MVVM architectural pattern.",
-                    "Collaborated with global cross-functional teams, participated in code reviews, and led daily meetings using agile methodologies such as Scrum and Kanban.",
-                    "Conducted research and development of technical solutions tailored for international companies, contributing to innovation and competitive advantage.",
-                    "Implemented modular and reusable architectures, including Clean Architecture, to ensure long-term maintainability and code quality."
-                ]
+            descBullets: [
+                "Developed and maintained large-scale Android applications for international markets using Kotlin, Jetpack Compose, and MVVM.",
+                "Collaborated with global, cross-functional teams and participated in code reviews to maintain technical excellence and consistency.",
+                "Led R&D initiatives for innovative mobile solutions, enhancing performance, scalability, and maintainability.",
+                "Implemented modular architectures and Clean Architecture patterns to ensure long-term code quality and team productivity."
+            ]
         },
         {
             role: "Software Engineer",
             company: "AtlasTech",
             companylogo: require("./assets/images/atlastechLogo.png"),
-            date: "January 2020 - May 2021",
-            desc: "",
-            descBullets:
-                [
-                    "Contributed to the maintenance and development of new features for e-commerce applications, enhancing performance and user experience.",
-                    "Utilized Firebase, Retrofit, and Room to manage data storage, synchronization, and server communication efficiently.",
-                    "Supported the development of Android applications across multiple sectors, including e-commerce and fintech, using Kotlin and the MVVM architectural pattern."
-                ]
-        },
-        {
-            role: "Support T.I",
-            company: "I.E.N.S.F",
-            companylogo: require("./assets/images/iensfLogo.png"),
-            date: "February 2018 - January 2020",
+            date: "January 2020 – May 2021",
             desc: "",
             descBullets: [
-                "Performed preventive and corrective maintenance on systems and computers to ensure operational stability and minimize downtime.",
-                "Administered local networks, managing configuration, monitoring performance, and resolving connectivity issues.",
-                "Configured and secured machines, applying best practices for system protection and data integrity."
+                "Enhanced and optimized e-commerce and fintech Android applications with improved performance and UX.",
+                "Integrated Firebase, Retrofit, and Room for efficient data handling, caching, and API communication.",
+                "Contributed to scalable mobile architectures using Kotlin, Coroutines, and MVVM for multiple product lines."
+            ]
+        },
+        {
+            role: "IT Support Specialist",
+            company: "I.E.N.S.F",
+            companylogo: require("./assets/images/iensfLogo.png"),
+            date: "February 2018 – January 2020",
+            desc: "",
+            descBullets: [
+                "Provided system and hardware maintenance to ensure high availability and operational continuity.",
+                "Managed local network configurations, monitored performance, and resolved connectivity and security issues.",
+                "Applied best practices for endpoint protection, data integrity, and system optimization."
             ]
         }
     ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -343,48 +329,45 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-    title: emoji("Achievements And Certifications 🏆 "),
+    title: emoji("Achievements & Certifications 🏆"),
     subtitle:
-        "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+        "Recognitions, certifications, and milestones achieved throughout my journey as an Android developer and technology innovator.",
 
     achievementsCards: [
         {
-            title: "Winner HackInRio",
+            title: "🏅 Winner - HackInRio 2020 (Tourism Cluster)",
             subtitle:
-                "First tourism cluster winner .",
-            image: require("./assets/images/codeInLogo.webp"),
-            imageAlt: "HackInRio Code-In Logo",
+                "Led the development of a smart tourism platform focused on digital transformation for the tourism sector, awarded 1st place at HackInRio 2020.",
+            image: require("./assets/images/hackinriologo.png"),
+            imageAlt: "HackInRio Tourism Cluster Logo",
             footerLink: [
                 {
-                    name: "Certification",
+                    name: "View Certificate",
                     url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
                 },
                 {
                     name: "Award Letter",
                     url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-                },
-                {
-                    name: "Google Code-in Blog",
-                    url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
                 }
             ]
         },
         {
-            title: "Google Assistant Action",
+            title: "🏆 Google Achievements",
             subtitle:
-                "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+                "Recognized in Google initiatives and training programs focused on modern Android development and ecosystem innovation.",
             image: require("./assets/images/googleAssistantLogo.webp"),
-            imageAlt: "Google Assistant Action Logo",
+            imageAlt: "Google Logo",
             footerLink: [
                 {
-                    name: "View Google Assistant Action",
-                    url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+                    name: "Google Code-in Winners Blog",
+                    url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
                 }
             ]
-        },
+        }
     ],
-    display: true // Set false to hide this section, defaults to true
+    display: true
 };
+
 
 // Blogs Section
 
@@ -455,7 +438,7 @@ const contactInfo = {
     title: emoji("Contact Me ☎️"),
     subtitle:
         "Discuss a project or just want to say hi? My Inbox is open for all.",
-    number: "+55-97984449986",
+    number: "+55-21968656114",
     email_address: "maxwellbezerra112233@gmail.com"
 };
 
